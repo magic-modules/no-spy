@@ -1,4 +1,4 @@
-## @magic-modules/nospy
+## @magic-modules/no-spy
 
 [gdpr](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) compliance for
  [@magic](https://magic.github.io/core) pages that do not track data.
@@ -18,7 +18,7 @@ making this module ~2kb smaller than the gdpr module.
 
 #### install:
 ```bash
-npm install --save-exact @magic-modules/nospy
+npm install --save-exact @magic-modules/no-spy
 ```
 
 #### usage:
