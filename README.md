@@ -6,7 +6,8 @@
 this module is a smaller version of the
  [gdpr magic-module](https://magic-modules.github.io/gdpr)
 cookie notification popup,
-showing a "we do not track" message and omitting the allow and deny cookie functionality.
+showing a "we do not track" message and omitting the allow and deny cookie functionality,
+making this module ~2kb smaller than the gdpr module.
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
