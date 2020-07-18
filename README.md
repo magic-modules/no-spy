@@ -71,6 +71,7 @@ simplify actions
 
 ##### 0.0.5
 * FIX: modal positioning
+* modal min width
 
 ##### 0.0.6 - unreleased
 ...
