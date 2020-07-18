@@ -89,16 +89,10 @@ export const actions = {
 }
 
 export const style = (vars = {}) => ({
-  bottom: '0.5em',
-  position: 'fixed',
-  opacity: 0,
-  animation: 'showNoSpy 1s 1s forwards',
-  left: '0.5em',
-
   '.icon': {
     position: 'fixed',
-    left: '1em',
-    bottom: '1em',
+    left: '0.5em',
+    bottom: '0.5em',
     cursor: 'pointer',
 
     color: vars.colors.gray[500],
@@ -144,15 +138,6 @@ export const style = (vars = {}) => ({
       margin: '1em 3% 0 0',
       maxWidth: '30%',
       width: 'auto',
-    },
-  },
-
-  '@keyframes showNoSpy': {
-    '0%': {
-      opacity: 0,
-    },
-    '100%': {
-      opacity: 1,
     },
   },
 })
