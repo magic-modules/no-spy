@@ -101,6 +101,7 @@ export const style = (vars = {}) => ({
     textAlign: 'left',
     left: 0,
     bottom: 0,
+    minWidth: '20em',
 
     '.light&&': {
       backgroundColor: vars.colors.gray[100],
