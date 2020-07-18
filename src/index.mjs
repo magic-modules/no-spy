@@ -69,10 +69,14 @@ export const actions = {
 }
 
 export const style = (vars = {}) => ({
+  position: 'fixed',
+  left: '0.5em',
+  bottom: '0.5em',
+
   '.icon': {
-    position: 'fixed',
-    left: '0.5em',
-    bottom: '0.5em',
+    position: 'absolute',
+    left: 0,
+    bottom: 0,
     cursor: 'pointer',
 
     color: vars.colors.gray[500],
@@ -93,10 +97,10 @@ export const style = (vars = {}) => ({
     color: vars.colors.gray[100],
     display: 'inline-block',
     padding: '1em',
-    position: 'fixed',
+    position: 'absolute',
     textAlign: 'left',
-    left: '0.5em',
-    bottom: '0.5em',
+    left: 0,
+    bottom: 0,
 
     '.light&&': {
       backgroundColor: vars.colors.gray[100],
