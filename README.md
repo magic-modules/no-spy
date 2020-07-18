@@ -61,7 +61,12 @@ first commit
 ##### 0.0.2
 remove sizes from css, make overwriteable
 
-##### 0.0.3 - unreleased
+##### 0.0.3 
+* style: remove animation
+* style: remove positioning
+* style: resize
+
+##### 0.0.4 - unreleased
 ...
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/no-spy.svg
