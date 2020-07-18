@@ -12,7 +12,7 @@ export const View = ({ nospy = {}, cookies = [] }) => {
       svg(
         {
           class: 'ShowHide icon',
-          onclick: [actions.nospy.show, { show: true }],
+          onclick: actions.nospy.toggle,
           width: '25',
           height: '25',
           viewBox: '0 0 512 512',
@@ -50,7 +50,7 @@ c11-0,22-3,32-8c0,3,0,6,0,9C480,318,455,374,414,414z
     div({ class: 'Container' }, [
       title && h3(title),
       content && p(content),
-      input({ onclick: actions.nospy.close, value: buttonText, type: 'button' }),
+      input({ onclick: actions.nospy.toggle, value: buttonText, type: 'button' }),
     ]),
   ])
 }
@@ -61,30 +61,10 @@ export const state = {
 
 export const actions = {
   nospy: {
-    show: (state, props) => {
-      let { show } = props
-
-      if (typeof show === 'boolean') {
-        return {
-          ...state,
-          nospy: {
-            ...state.nospy,
-            show,
-          },
-        }
-      }
-
-      // return unchanged, no redraw
-      return state
+    toggle: (state) => {
+      state.nospy.show = !state.nospy.show
+      return { ...state }
     },
-
-    close: state => ({
-      ...state,
-      nospy: {
-        ...state.nospy,
-        show: false,
-      },
-    }),
   },
 }
 
@@ -113,8 +93,10 @@ export const style = (vars = {}) => ({
     color: vars.colors.gray[100],
     display: 'inline-block',
     padding: '1em',
-    position: 'relative',
+    position: 'fixed',
     textAlign: 'left',
+    left: '0.5em',
+    bottom: '0.5em',
 
     '.light&&': {
       backgroundColor: vars.colors.gray[100],
