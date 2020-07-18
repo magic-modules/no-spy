@@ -11,7 +11,7 @@ export const View = ({ nospy = {}, cookies = [] }) => {
       { class: 'NoSpy' },
       svg(
         {
-          class: 'ShowHide',
+          class: 'ShowHide icon',
           onclick: [actions.nospy.show, { show: true }],
           viewBox: '0 0 512 512',
         },
