@@ -58,6 +58,12 @@ export const state = {
 ##### 0.0.1
 first commit
 
+##### 0.0.2
+remove sizes from css, make overwriteable
+
+##### 0.0.3 - unreleased
+...
+
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/no-spy.svg
 [npm-url]: https://www.npmjs.com/package/@magic-modules/no-spy
 [travis-image]: https://img.shields.io/travis/com/magic-modules/no-spy/master
