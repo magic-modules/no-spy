@@ -11,7 +11,7 @@ export const View = ({ nospy = {}, cookies = [] }) => {
       { class: 'NoSpy' },
       svg(
         {
-          class: 'ShowHide icon',
+          class: 'icon',
           onclick: actions.nospy.toggle,
           width: '25',
           height: '25',
@@ -61,7 +61,7 @@ export const state = {
 
 export const actions = {
   nospy: {
-    toggle: (state) => {
+    toggle: state => {
       state.nospy.show = !state.nospy.show
       return { ...state }
     },
