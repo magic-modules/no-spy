@@ -2,7 +2,6 @@ export const state = {
   title: '@magic-modules/no-spy',
   description:
     'adds a gdpr compliant information popup with minimal intrusion and end-user complexity.',
-
   logotext: 'NoSpy',
 
   menu: [
