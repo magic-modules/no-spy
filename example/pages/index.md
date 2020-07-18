@@ -2,7 +2,7 @@
 
 this is the
 [@magic-modules](https://github.com/magic-modules)
-Gdpr component.
+NoSpy component.
 
 ${state.description}
 
@@ -16,14 +16,14 @@ ${state.description}
 
 ### activate
 
-to activate Gdpr, add it to the list of hoisted modules
+to activate NoSpy, add it to the list of hoisted modules
 
 ```
 // src/config.mjs
 export default {
   // ... other config variables
 
-  HOIST: ['Gdpr'],
+  HOIST: ['NoSpy'],
 }
 ```
 
@@ -35,7 +35,7 @@ after doing this, the no-spy module will show up.'),
 // /src/app.mjs
 export const state = {
   nospy: {
-    title: 'Title text for the gdpr popup',
+    title: 'Title text for the nospy popup',
     content: 'String or Array of Magic modules',
     buttonText: 'Button text if no cookies are defined',
   },
@@ -45,6 +45,6 @@ export const state = {
 ## source
 
 the source for this page is in the
-[example directory](https://github.com/magic-modules/gdpr/tree/master/example),
+[example directory](https://github.com/magic-modules/no-spy/tree/master/example),
 and gets built and published to github using
 [@magic/core](https://github.com/magic/core)
