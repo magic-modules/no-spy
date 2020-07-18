@@ -66,7 +66,11 @@ remove sizes from css, make overwriteable
 * style: remove positioning
 * style: resize
 
-##### 0.0.4 - unreleased
+##### 0.0.4 
+* FIX: modal positioning
+* simplify actions
+
+##### 0.0.5 - unreleased
 ...
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/no-spy.svg
