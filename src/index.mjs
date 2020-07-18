@@ -13,6 +13,8 @@ export const View = ({ nospy = {}, cookies = [] }) => {
         {
           class: 'ShowHide icon',
           onclick: [actions.nospy.show, { show: true }],
+          width: '25',
+          height: '25',
           viewBox: '0 0 512 512',
         },
         [
@@ -91,16 +93,12 @@ export const style = (vars = {}) => ({
   position: 'fixed',
   opacity: 0,
   animation: 'showNoSpy 1s 1s forwards',
-  left: '3%',
-  maxWidth: '94%',
-  textAlign: 'center',
+  left: '0.5em',
 
-  '.ShowHide': {
+  '.icon': {
     position: 'fixed',
     left: '1em',
     bottom: '1em',
-    width: '2em',
-    height: '2em',
     cursor: 'pointer',
 
     color: vars.colors.gray[500],
