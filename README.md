@@ -73,7 +73,10 @@ simplify actions
 * FIX: modal positioning
 * modal min width
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+bump required node version to 14.15.4
+
+##### 0.0.7 - unreleased
 ...
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/no-spy.svg
