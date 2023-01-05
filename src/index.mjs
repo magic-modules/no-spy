@@ -132,7 +132,7 @@ export const style = (vars = {}) => ({
     width: '100%',
   },
 
-  '@media screen and (min-width: 900px)': {
+  [`@media screen and (min-width: ${vars.widths?.laptop || '900px'})`]: {
     'input[type=button]': {
       margin: '1em 3% 0 0',
       maxWidth: '30%',
