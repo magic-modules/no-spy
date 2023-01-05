@@ -1,10 +1,10 @@
 ## @magic-modules/no-spy
 
 [gdpr](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) compliance for
- [@magic](https://magic.github.io/core) pages that do not track data.
+[@magic](https://magic.github.io/core) pages that do not track data.
 
 this module is a smaller version of the
- [gdpr magic-module](https://magic-modules.github.io/gdpr)
+[gdpr magic-module](https://magic-modules.github.io/gdpr)
 cookie notification popup,
 showing a "we do not track" message and omitting the allow and deny cookie functionality,
 making this module ~2kb smaller than the gdpr module.
@@ -17,6 +17,7 @@ making this module ~2kb smaller than the gdpr module.
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
 #### install:
+
 ```bash
 npm install --save-exact @magic-modules/no-spy
 ```
@@ -24,7 +25,9 @@ npm install --save-exact @magic-modules/no-spy
 #### usage:
 
 ##### activate:
+
 to activate NoSpy, add it to the list of hoisted modules
+
 ```javascript
 // src/config.mjs
 export default {
@@ -36,6 +39,7 @@ export default {
   // HOIST: ['NoSpy', 'Messages'],
 }
 ```
+
 after doing this, the NoSpy module will show up as a cookie on your page.
 
 ##### change text:
@@ -56,30 +60,38 @@ export const state = {
 #### changelog
 
 ##### 0.0.1
+
 first commit
 
 ##### 0.0.2
+
 remove sizes from css, make overwriteable
 
-##### 0.0.3 
-* style: remove animation
-* style: remove positioning
-* style: resize
+##### 0.0.3
 
-##### 0.0.4 
+- style: remove animation
+- style: remove positioning
+- style: resize
+
+##### 0.0.4
+
 simplify actions
 
 ##### 0.0.5
-* FIX: modal positioning
-* modal min width
+
+- FIX: modal positioning
+- modal min width
 
 ##### 0.0.6
+
 bump required node version to 14.15.4
 
 ##### 0.0.7
+
 update dependencies
 
 ##### 0.0.8 - unreleased
+
 ...
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/no-spy.svg
