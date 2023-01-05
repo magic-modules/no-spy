@@ -90,7 +90,13 @@ bump required node version to 14.15.4
 
 update dependencies
 
-##### 0.0.8 - unreleased
+##### 0.0.8
+
+- update dependencies
+- add Background, a full-screen overlay that removes the popup when clicked.
+- update styles regarding min-width to allow screens smaller than 20em.
+
+##### 0.0.9 - unreleased
 
 ...
 
