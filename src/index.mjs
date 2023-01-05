@@ -47,6 +47,7 @@ c11-0,22-3,32-8c0,3,0,6,0,9C480,318,455,374,414,414z
   }
 
   return div({ class: 'NoSpy' }, [
+    div({ class: 'Background', onclick: actions.nospy.toggle }),
     div({ class: 'Container' }, [
       title && h3(title),
       content && p(content),
@@ -88,6 +89,17 @@ export const style = (vars = {}) => ({
       stroke: vars.colors.gray[700],
       fill: vars.colors.gray[700],
     },
+  },
+
+  '.Background': {
+    height: '100vh',
+    width: '100vw',
+    overflow: 'hidden',
+    left: 0,
+    top: 0,
+    position: 'fixed',
+    padding: 0,
+    margin: 0,
   },
 
   '.Container': {
