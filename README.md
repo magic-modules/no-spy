@@ -95,6 +95,7 @@ update dependencies
 - update dependencies
 - add Background, a full-screen overlay that removes the popup when clicked.
 - update styles regarding min-width to allow screens smaller than 20em.
+- replace width in mediaquery with vars.widths.laptop to make sure we match the theme width.
 
 ##### 0.0.9 - unreleased
 
