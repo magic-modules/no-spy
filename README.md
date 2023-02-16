@@ -97,7 +97,11 @@ update dependencies
 - update styles regarding min-width to allow screens smaller than 20em.
 - replace width in mediaquery with vars.widths.laptop to make sure we match the theme width.
 
-##### 0.0.9 - unreleased
+##### 0.0.9
+
+update dependencies
+
+##### 0.0.10 - unreleased
 
 ...
 
